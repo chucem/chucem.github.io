@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chucem.github.io/IveltChromeExtension/sitemap.xml

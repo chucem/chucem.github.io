@@ -27,7 +27,7 @@
 <!-- ============================== English ============================== -->
 <main class="wrap doc" data-l="en">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 12, 2026</p>
+    <p class="updated">Last updated: October 13, 2026</p>
 
     <p>This policy explains what the <strong>iVelt Helper V2</strong> browser extension ("the extension") does with your information. The extension is made by volunteers from the אייוועלט community. It is free, and its source code is public on <a href="https://github.com/chucem/IveltChromeExtension">GitHub</a>.</p>
 
@@ -46,6 +46,7 @@
         <li>Your settings (which features are turned on, the Google Drive folder name, and similar options).</li>
         <li>A cached list of which forum topics have a linked comments topic.</li>
         <li>If you use the Google Drive feature: the name, email address and profile picture of the Google account you connected, so the extension can show you which account files will go to, and the ID of the folder it uploads to.</li>
+        <li>If you use the Dropbox feature: the name, email address and profile picture of the Dropbox account you connected, and the sign-in token Dropbox gives the extension (see section 4).</li>
         <li>Diagnostic logs, only if you turn on debug mode. They leave your computer only if you copy them yourself.</li>
     </ul>
     <p>This information never leaves your device. Uninstalling the extension deletes it.</p>
@@ -66,7 +67,20 @@
     </ul>
     <p>iVelt Helper's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from Google APIs is used only to provide the upload feature you asked for. It is not used for advertising, not sold, not read by people, and not transferred to anyone else.</p>
 
-    <h2>4. Other services</h2>
+    <h2>4. Dropbox upload (optional)</h2>
+    <p>This feature is used only when you choose <strong>Dropbox</strong> in the upload button while writing a post.</p>
+    <ul>
+        <li><strong>Sign-in:</strong> You connect an account on Dropbox's own sign-in page. Before anything is uploaded, the extension shows the name and email of that account, so you can see where files will go and switch account or sign out at any time.</li>
+        <li><strong>Tokens:</strong> Dropbox gives the extension a long-lived sign-in token, so you don't have to sign in again. It is kept only in the extension's storage in your browser and is used only to talk to Dropbox. Short-lived access tokens made from it are kept only until you close the browser. Signing out in the extension deletes the tokens and asks Dropbox to revoke access.</li>
+        <li><strong>Limited access:</strong> The extension uses Dropbox's "App folder" access. It can only see its own folder (<code>Apps/Shared on iVelt</code>) and <strong>cannot</strong> see, read or change anything else in your Dropbox. It also reads your account's name, email address, picture and free space, only to show them to you.</li>
+        <li><strong>What it does:</strong> It uploads the files you pick into that folder and creates a shared link for each one, which it inserts into your post.</li>
+        <li><strong>Public links:</strong> Anyone who has the link can view the file. To stop sharing a file, delete it or remove its link in Dropbox.</li>
+        <li><strong>Where files go:</strong> Files go straight from your browser to <em>your own</em> Dropbox. They never pass through any server of ours.</li>
+        <li><strong>Revoking access:</strong> You can remove the extension's access at any time in your Dropbox account under <a href="https://www.dropbox.com/account/connected_apps">Settings → Connected apps</a>.</li>
+    </ul>
+    <p>Information received from Dropbox is used only to provide the upload feature you asked for. It is not used for advertising, not sold, not read by people, and not transferred to anyone else. Your use of Dropbox is also covered by <a href="https://www.dropbox.com/privacy">Dropbox's Privacy Policy</a>.</p>
+
+    <h2>5. Other services</h2>
     <ul>
         <li><strong>Google Sheets:</strong> The extension downloads a public, read-only list of comment topics from a published Google Sheet. No information about you is included in that request.</li>
         <li><strong>Google Search:</strong> When you use the built-in topic or site search, your search words are sent to Google Search, just as if you had searched there yourself.</li>
@@ -74,20 +88,20 @@
     </ul>
     <p>Your use of Google services is also covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
-    <h2>5. Children</h2>
+    <h2>6. Children</h2>
     <p>The extension is not directed at children under 13 and does not knowingly collect any information from them.</p>
 
-    <h2>6. Changes to this policy</h2>
+    <h2>7. Changes to this policy</h2>
     <p>If this policy changes, the new version will be posted on this page with a new "Last updated" date. The full history is available on GitHub.</p>
 
-    <h2>7. Contact</h2>
+    <h2>8. Contact</h2>
     <p>Questions or concerns? Open an issue at <a href="https://github.com/chucem/IveltChromeExtension/issues">github.com/chucem/IveltChromeExtension/issues</a>.</p>
 </main>
 
 <!-- ============================== Yiddish ============================== -->
 <main class="wrap doc" data-l="yi" dir="rtl">
     <h1>פריוואטקייט פאליסי</h1>
-    <p class="updated">לעצטנס אפדעיטעד: 12טן אקטאבער 2026</p>
+    <p class="updated">לעצטנס אפדעיטעד: 13טן אקטאבער 2026</p>
 
     <p>די פאליסי ערקלערט וואס די <strong>iVelt Helper V2</strong> בראוזער עקסטענשען ("די עקסטענשען") טוט מיט אייער אינפארמאציע. די עקסטענשען ווערט געמאכט דורך פרייוויליגע פון די אייוועלט קהילה. זי איז אומזיסט, און דער קאוד איז עפנטלעך אויף <a href="https://github.com/chucem/IveltChromeExtension">GitHub</a>.</p>
 
@@ -108,6 +122,7 @@
         <li>אייערע אנשטעלונגען (וועלכע זאכן זענען אנגעצונדן, דער נאמען פונעם Google Drive פאלדער, א.א.וו.).</li>
         <li>א ליסטע פון וועלכע אשכולות האבן א קאמענטארן אשכול.</li>
         <li>אויב מען נוצט Google Drive: דער נאמען, אימעיל און בילד פונעם Google אקאונט וואס איר האט פארבינדן, כדי צו ווייזן אויף וועלכן אקאונט די פיילס גייען, און דער ID פונעם פאלדער.</li>
+        <li>אויב מען נוצט Dropbox: דער נאמען, אימעיל און בילד פונעם Dropbox אקאונט וואס איר האט פארבינדן, און דער אריינלאג טאקען וואס Dropbox גיט דער עקסטענשען (זעט טייל 4).</li>
         <li>לאגס, נאר אויב מען צינדט אן "דיבאג מאוד". זיי גייען נישט ארויס פון אייער קאמפיוטער סיידן איר קאפירט זיי אליין.</li>
     </ul>
     <p>די אינפארמאציע גייט נישט ארויס פון אייער מכשיר. אז מען נעמט אראפ די עקסטענשען ווערט עס אויסגעמעקט.</p>
@@ -128,7 +143,20 @@
     </ul>
     <p>די נוצונג פון אינפארמאציע פון Google APIs איז לויט די <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, אריינגערעכנט די Limited Use באדינגונגען. די אינפארמאציע ווערט גענוצט נאר פאר די ארויפלייג אפציע וואס איר האט געבעטן. זי ווערט נישט גענוצט פאר רעקלאמעס, נישט פארקויפט, נישט געליינט דורך מענטשן, און נישט איבערגעגעבן צו קיינעם.</p>
 
-    <h2>4. אנדערע סערוויסעס</h2>
+    <h2>4. ארויפלייגן אויף Dropbox (אויב מען וויל)</h2>
+    <p>די אפציע ווערט גענוצט נאר ווען איר קלייבט אויס <strong>Dropbox</strong> אינעם ארויפלייג קנעפל ביים שרייבן א תגובה.</p>
+    <ul>
+        <li><strong>אריינלאגן:</strong> איר פארבינדט אן אקאונט אויף Dropbox'ס אייגענעם אריינלאג בלאט. איידער עפעס ווערט ארויפגעלייגט, ווייזט די עקסטענשען דעם נאמען און אימעיל פון יענעם אקאונט, אז איר זאלט זען וואו די פיילס גייען, און איר קענט טוישן דעם אקאונט אדער ארויסלאגן ווען איר ווילט.</li>
+        <li><strong>טאקענס:</strong> Dropbox גיט דער עקסטענשען א לאנג-לעבעדיגן אריינלאג טאקען, אז מען זאל נישט דארפן זיך אריינלאגן נאכאמאל. ער ווערט געהאלטן נאר אינעם עקסטענשען'ס סטארעדזש אין אייער בראוזער, און ווערט גענוצט נאר צו רעדן מיט Dropbox. קורצע צוטריט טאקענס וואס ווערן געמאכט דערפון ווערן געהאלטן נאר ביז מען פארמאכט דעם בראוזער. ארויסלאגן אין דער עקסטענשען מעקט אויס די טאקענס און בעט Dropbox צו בטל'ן דעם צוטריט.</li>
+        <li><strong>באגרעניצטער צוטריט:</strong> די עקסטענשען נוצט Dropbox'ס "App folder" צוטריט. זי קען נאר זען איר אייגענעם פאלדער (<code>Apps/Shared on iVelt</code>), און קען <strong>נישט</strong> זען, ליינען אדער טוישן קיין שום אנדערע זאך אין אייער Dropbox. זי ליינט אויך דעם אקאונט'ס נאמען, אימעיל, בילד און פרייען פלאץ, נאר כדי עס צו ווייזן פאר אייך.</li>
+        <li><strong>וואס עס טוט:</strong> עס לייגט ארויף די פיילס וואס איר קלייבט אויס אין יענעם פאלדער, און מאכט א לינק פאר יעדע פייל, וואס ווערט אריינגעלייגט אין אייער תגובה.</li>
+        <li><strong>עפנטלעכע לינקס:</strong> יעדער וואס האט דעם לינק קען זען די פייל. כדי אויפצוהערן צו טיילן א פייל, מעקט עס אויס אדער נעמט אראפ דעם לינק אין Dropbox.</li>
+        <li><strong>וואו די פיילס גייען:</strong> די פיילס גייען גלייך פון אייער בראוזער צו <em>אייער אייגענעם</em> Dropbox. זיי גייען קיינמאל נישט דורך קיין סערווער פון אונז.</li>
+        <li><strong>אפנעמען דעם צוטריט:</strong> איר קענט אפנעמען דעם עקסטענשען'ס צוטריט ווען איר ווילט, אין אייער Dropbox אקאונט אונטער <a href="https://www.dropbox.com/account/connected_apps">Settings → Connected apps</a>.</li>
+    </ul>
+    <p>אינפארמאציע פון Dropbox ווערט גענוצט נאר פאר די ארויפלייג אפציע וואס איר האט געבעטן. זי ווערט נישט גענוצט פאר רעקלאמעס, נישט פארקויפט, נישט געליינט דורך מענטשן, און נישט איבערגעגעבן צו קיינעם. אייער נוצונג פון Dropbox איז אויך אונטער <a href="https://www.dropbox.com/privacy">Dropbox'ס פריוואטקייט פאליסי</a>.</p>
+
+    <h2>5. אנדערע סערוויסעס</h2>
     <ul>
         <li><strong>Google Sheets:</strong> די עקסטענשען לאדנט אראפ א עפנטלעכע ליסטע פון קאמענטארן אשכולות פון א Google Sheet. קיין אינפארמאציע וועגן אייך ווערט נישט געשיקט דערמיט.</li>
         <li><strong>Google זוך:</strong> ווען איר נוצט די זוך אינעם אשכול אדער אויפן זייטל, גייען אייערע ווערטער צו Google, פונקט ווי איר וואלט אליין געזוכט דארט.</li>
@@ -136,13 +164,13 @@
     </ul>
     <p>אייער נוצונג פון Google סערוויסעס איז אויך אונטער <a href="https://policies.google.com/privacy">Google'ס פריוואטקייט פאליסי</a>.</p>
 
-    <h2>5. קינדער</h2>
+    <h2>6. קינדער</h2>
     <p>די עקסטענשען איז נישט געמאכט פאר קינדער אונטער 13, און זאמלט נישט צוזאם קיין אינפארמאציע פון זיי.</p>
 
-    <h2>6. ענדערונגען</h2>
+    <h2>7. ענדערונגען</h2>
     <p>אויב די פאליסי טוישט זיך, וועט די נייע ווערסיע ארויפגעלייגט ווערן אויף דעם בלאט מיט א נייע דאטום. די גאנצע היסטאריע איז דא אויף GitHub.</p>
 
-    <h2>7. קאנטאקט</h2>
+    <h2>8. קאנטאקט</h2>
     <p>שאלות? עפנט אן issue אויף <a href="https://github.com/chucem/IveltChromeExtension/issues">github.com/chucem/IveltChromeExtension/issues</a>.</p>
 </main>
 

@@ -1,0 +1,10 @@
+# Cloudflare Pages response headers.
+# File names aren't versioned, so CSS and images get a short cache: a browser uses its copy
+# for up to an hour, then shows it once more while fetching the new one in the background.
+# HTML keeps the default (always revalidate).
+
+/style.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/img/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

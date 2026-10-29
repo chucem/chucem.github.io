@@ -7,9 +7,49 @@
     <meta name="description" content="A Chrome extension that adds shortcuts, notifications and other usability improvements to the אייוועלט forum.">
     <link rel="icon" href="img/icon128.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Loaded without blocking the first paint; the system font shows until it arrives. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;600;700&display=swap"></noscript>
     <link rel="stylesheet" href="style.css">
-    <script src="lang.js"></script>
+    <script>
+    // English / Yiddish switch. Elements carry data-l="en" or data-l="yi"; the CSS hides
+    // whichever language isn't active. The choice is remembered per browser.
+    (function () {
+        var KEY = 'ivelt-site-lang';
+        var root = document.documentElement;
+
+        function stored() {
+            try { return localStorage.getItem(KEY); } catch (e) { return null; }
+        }
+
+        function initial() {
+            var fromUrl = new URLSearchParams(location.search).get('lang');
+            if (fromUrl === 'en' || fromUrl === 'yi') return fromUrl;
+            var saved = stored();
+            if (saved === 'en' || saved === 'yi') return saved;
+            return /^(yi|he)\b/i.test(navigator.language || '') ? 'yi' : 'en';
+        }
+
+        function apply(lang) {
+            root.setAttribute('data-lang', lang);
+            root.setAttribute('lang', lang);
+            root.setAttribute('dir', lang === 'yi' ? 'rtl' : 'ltr');
+        }
+
+        apply(initial());
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.querySelector('.lang-toggle');
+            if (!button) return;
+            button.addEventListener('click', function () {
+                var next = root.getAttribute('data-lang') === 'yi' ? 'en' : 'yi';
+                apply(next);
+                try { localStorage.setItem(KEY, next); } catch (e) { /* private mode */ }
+            });
+        });
+    })();
+    </script>
 </head>
 <body>
 
@@ -143,27 +183,27 @@
             <h2><span data-l="en">Screenshots</span><span data-l="yi">בילדער</span></h2>
             <div class="shots">
                 <figure>
-                    <img src="img/screenshot-1-overview.png" alt="Overview" loading="lazy">
+                    <img src="img/screenshot-1-overview.webp" alt="Overview" loading="lazy">
                     <figcaption><span data-l="en">Overview</span><span data-l="yi">איבערבליק</span></figcaption>
                 </figure>
                 <figure>
-                    <img src="img/screenshot-2-post-buttons.png" alt="Post buttons" loading="lazy">
+                    <img src="img/screenshot-2-post-buttons.webp" alt="Post buttons" loading="lazy">
                     <figcaption><span data-l="en">Post buttons</span><span data-l="yi">קנעפלעך ביי א תגובה</span></figcaption>
                 </figure>
                 <figure>
-                    <img src="img/screenshot-3-notifications.png" alt="Notifications" loading="lazy">
+                    <img src="img/screenshot-3-notifications.webp" alt="Notifications" loading="lazy">
                     <figcaption><span data-l="en">Notifications</span><span data-l="yi">נאטיפיקאציעס</span></figcaption>
                 </figure>
                 <figure>
-                    <img src="img/screenshot-4-image-resizer.png" alt="Image Resizer" loading="lazy">
+                    <img src="img/screenshot-4-image-resizer.webp" alt="Image Resizer" loading="lazy">
                     <figcaption><span data-l="en">Image Resizer</span><span data-l="yi">בילדער פארקלענערער</span></figcaption>
                 </figure>
                 <figure>
-                    <img src="img/screenshot-5-settings.png" alt="Settings" loading="lazy">
+                    <img src="img/screenshot-5-settings.webp" alt="Settings" loading="lazy">
                     <figcaption><span data-l="en">Settings</span><span data-l="yi">אנשטעלונגען</span></figcaption>
                 </figure>
                 <figure>
-                    <img src="img/screenshot-6-shortcuts.png" alt="Keyboard shortcuts" loading="lazy">
+                    <img src="img/screenshot-6-shortcuts.webp" alt="Keyboard shortcuts" loading="lazy">
                     <figcaption><span data-l="en">Keyboard shortcuts</span><span data-l="yi">קיבאורד שארטקאטס</span></figcaption>
                 </figure>
             </div>

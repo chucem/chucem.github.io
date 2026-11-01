@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>iVelt Helper V2</title>
-    <meta name="description" content="A Chrome extension that adds shortcuts, notifications and other usability improvements to the אייוועלט forum.">
+    <meta name="description" content="A free Chrome and Edge extension that adds keyboard shortcuts, notifications, extra post buttons, color themes and other improvements to the אייוועלט forum.">
     <link rel="icon" href="img/icon128.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,17 +96,17 @@
                     <h3><span data-l="en">Keyboard shortcuts</span><span data-l="yi">קיבאורד שארטקאטס</span></h3>
                     <ul data-l="en">
                         <li><kbd>→</kbd> / <kbd>←</kbd> previous / next page</li>
-                        <li><kbd>Ctrl</kbd>+<kbd>Enter</kbd> submit a post</li>
-                        <li><kbd>Alt</kbd>+<kbd>v</kbd> preview</li>
+                        <li><kbd>↑</kbd> / <kbd>↓</kbd> top / bottom of the page</li>
+                        <li><kbd>Ctrl</kbd>+<kbd>Enter</kbd> send a post · <kbd>Alt</kbd>+<kbd>v</kbd> preview</li>
                         <li><kbd>Alt</kbd>+<kbd>a</kbd> active topics</li>
-                        <li><kbd>Alt</kbd>+<kbd>n</kbd> / <kbd>m</kbd> notifications</li>
+                        <li><kbd>Alt</kbd>+<kbd>n</kbd> notifications · <kbd>Alt</kbd>+<kbd>m</kbd> next unread</li>
                     </ul>
                     <ul data-l="yi">
                         <li><kbd>→</kbd> / <kbd>←</kbd> פריערדיגער / קומענדיגער בלאט</li>
-                        <li><kbd>Ctrl</kbd>+<kbd>Enter</kbd> שיק די תגובה</li>
-                        <li><kbd>Alt</kbd>+<kbd>v</kbd> פריוויו</li>
+                        <li><kbd>↑</kbd> / <kbd>↓</kbd> אנהייב / סוף פונעם בלאט</li>
+                        <li><kbd>Ctrl</kbd>+<kbd>Enter</kbd> שיק די תגובה · <kbd>Alt</kbd>+<kbd>v</kbd> פריוויו</li>
                         <li><kbd>Alt</kbd>+<kbd>a</kbd> אקטיווע אשכולות</li>
-                        <li><kbd>Alt</kbd>+<kbd>n</kbd> / <kbd>m</kbd> נאטיפיקאציעס</li>
+                        <li><kbd>Alt</kbd>+<kbd>n</kbd> נאטיפיקאציעס · <kbd>Alt</kbd>+<kbd>m</kbd> קומענדיגע אומגעליינטע</li>
                     </ul>
                 </div>
 
@@ -114,17 +114,23 @@
                     <h3><span data-l="en">Post buttons</span><span data-l="yi">קנעפלעך ביי א תגובה</span></h3>
                     <ul data-l="en">
                         <li>Quote only the last reply</li>
+                        <li>Quote just the words you select</li>
                         <li>Mention the poster</li>
                         <li>Quote in another topic, with images</li>
                         <li>Quote in the comments topic</li>
-                        <li>Copy a link to the post</li>
+                        <li>Copy a link to the post in one click</li>
+                        <li>See who liked a post, double-click to like it</li>
+                        <li>Profile card when you rest the mouse on a name</li>
                     </ul>
                     <ul data-l="yi">
                         <li>ציטיר נאר די לעצטע תגובה</li>
+                        <li>ציטיר נאר די אנגעצייכנטע ווערטער</li>
                         <li>דערמאן דעם שרייבער</li>
                         <li>ציטיר אין אנדערע אשכול, מיט די בילדער</li>
                         <li>ציטיר אינעם קאמענטארן אשכול</li>
-                        <li>קאפיר דעם לינק צו דער תגובה</li>
+                        <li>קאפיר דעם לינק צו דער תגובה מיט איין קליק</li>
+                        <li>זעט ווער עס האט באדאנקט, דאבל-קליק צו באדאנקען</li>
+                        <li>פראפייל קארטל ווען מען האלט די מויז אויף א נאמען</li>
                     </ul>
                 </div>
 
@@ -132,31 +138,51 @@
                     <h3><span data-l="en">Notifications</span><span data-l="yi">נאטיפיקאציעס</span></h3>
                     <ul data-l="en">
                         <li>Unread count on the toolbar icon</li>
-                        <li>Optional browser notifications</li>
-                        <li>Alert when new replies arrive</li>
-                        <li>Separate bells for quotes, thanks and mentions</li>
+                        <li>Browser notifications, even when אייוועלט isn't open</li>
+                        <li>Alert when new replies arrive in the topic you're reading</li>
+                        <li>Separate bells for quotes, likes and mentions, with a grey +N for older unread ones</li>
+                        <li>@mentions link to the user's profile</li>
                     </ul>
                     <ul data-l="yi">
                         <li>נומער אויפן אייקאן מיט אומגעליינטע נאטיפיקאציעס</li>
-                        <li>בראוזער נאטיפיקאציעס (אויב מען וויל)</li>
-                        <li>א מעלדונג ווען נייע תגובות קומען צו</li>
-                        <li>באזונדערע גלעקלעך פאר ציטירט, באדאנקט און דערמאנט</li>
+                        <li>בראוזער נאטיפיקאציעס, אפילו ווען אייוועלט איז נישט אפן</li>
+                        <li>א מעלדונג ווען נייע תגובות קומען צו אינעם אשכול וואס מען ליינט</li>
+                        <li>באזונדערע גלעקלעך פאר ציטירט, באדאנקט און דערמאנט, מיט א גרויען +N פאר עלטערע</li>
+                        <li>@דערמאנונגען זענען א לינק צום באנוצער'ס פראפייל</li>
                     </ul>
                 </div>
 
                 <div class="card">
                     <h3><span data-l="en">Writing posts</span><span data-l="yi">שרייבן א תגובה</span></h3>
                     <ul data-l="en">
-                        <li>Warning before losing an unsent post</li>
-                        <li>Image Resizer: shrink images under the attachment limit</li>
-                        <li>Pack a whole folder into one ZIP attachment</li>
-                        <li>Upload files to your Google Drive or Dropbox and insert a link <span class="badge">New</span></li>
+                        <li>Drafts are kept, so a closed tab or a crash doesn't lose your post</li>
+                        <li>Undo (Ctrl+Z) and redo (Ctrl+Y)</li>
+                        <li>Image Resizer: shrink images under the attachment limit, or pack a folder into one ZIP</li>
+                        <li>Paste an image straight into a post</li>
+                        <li>Upload files to your Google Drive or Dropbox and insert the link, in private messages too</li>
+                        <li>Warning before leaving a page with an unsent post</li>
                     </ul>
                     <ul data-l="yi">
-                        <li>ווארנט איידער מען פארלירט א נישט-געשיקטע תגובה</li>
-                        <li>בילדער פארקלענערער: פאסט בילדער אריין אין די עטעטשמענט גרייס</li>
-                        <li>מאכט א גאנצן פאלדער אין איין ZIP עטעטשמענט</li>
-                        <li>לייגט ארויף פיילס אויף אייער Google Drive אדער Dropbox און לייגט אריין א לינק <span class="badge">נייע</span></li>
+                        <li>דראפטס ווערן אפגעהיט, אז א פארמאכטער טאב אדער א קראך זאל עס נישט פארלירן</li>
+                        <li>צוריקדרייען (Ctrl+Z) און ווידער טון (Ctrl+Y)</li>
+                        <li>בילדער פארקלענערער: פאסט בילדער אריין אין די עטעטשמענט גרייס, אדער א גאנצן פאלדער אין איין ZIP</li>
+                        <li>פעיסט א בילד גלייך אין די תגובה</li>
+                        <li>לייגט ארויף פיילס אויף אייער Google Drive אדער Dropbox און לייגט אריין דעם לינק, אויך אין א פריוואטע מעסעדזש</li>
+                        <li>ווארנט איידער מען פארלאזט א בלאט מיט א נישט-געשיקטע תגובה</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3><span data-l="en">Reading</span><span data-l="yi">ליינען</span></h3>
+                    <ul data-l="en">
+                        <li>A topic with new replies opens at the first unread post</li>
+                        <li>Nicer spoilers: covered in place until clicked</li>
+                        <li>16 color themes, light and dark <span class="badge">New</span></li>
+                    </ul>
+                    <ul data-l="yi">
+                        <li>אן אשכול מיט נייע תגובות עפנט זיך ביי דער ערשטער אומגעליינטער</li>
+                        <li>שענערע ספוילערס: בלייבן צוגעדעקט ביז מען קליקט</li>
+                        <li>16 קאליר טעמעס, העל און טונקל <span class="badge">נייע</span></li>
                     </ul>
                 </div>
 
@@ -164,13 +190,15 @@
                     <h3><span data-l="en">And more</span><span data-l="yi">און נאך</span></h3>
                     <ul data-l="en">
                         <li>Google search within a topic or the whole site</li>
-                        <li>Print several pages or a whole topic</li>
+                        <li>Print several pages or a whole topic, optionally with who liked each post</li>
                         <li>Popup with quick links, quick sign-in and emergency sign-out</li>
+                        <li>Settings stay the same on all your computers</li>
                     </ul>
                     <ul data-l="yi">
                         <li>גוגל זוך אינעם אשכול אדער אין גאנץ אייוועלט</li>
-                        <li>פרינט עטליכע בלעטער אדער א גאנצן אשכול</li>
+                        <li>פרינט עטליכע בלעטער אדער א גאנצן אשכול, אויב מען וויל מיט ווער עס האט באדאנקט</li>
                         <li>פאפ-אפ מיט גיכע לינקס, אריינלאגן און עמערזשענסי ארויסלאגן</li>
+                        <li>די אנשטעלונגען בלייבן די זעלבע אויף אלע קאמפיוטערס</li>
                     </ul>
                 </div>
 
@@ -195,8 +223,8 @@
                     <figcaption><span data-l="en">Notifications</span><span data-l="yi">נאטיפיקאציעס</span></figcaption>
                 </figure>
                 <figure>
-                    <img src="img/screenshot-4-image-resizer.webp" alt="Image Resizer" loading="lazy">
-                    <figcaption><span data-l="en">Image Resizer</span><span data-l="yi">בילדער פארקלענערער</span></figcaption>
+                    <img src="img/screenshot-4-image-resizer.webp" alt="Images and files" loading="lazy">
+                    <figcaption><span data-l="en">Images and files</span><span data-l="yi">בילדער און פיילס</span></figcaption>
                 </figure>
                 <figure>
                     <img src="img/screenshot-5-settings.webp" alt="Settings" loading="lazy">
@@ -206,6 +234,24 @@
                     <img src="img/screenshot-6-shortcuts.webp" alt="Keyboard shortcuts" loading="lazy">
                     <figcaption><span data-l="en">Keyboard shortcuts</span><span data-l="yi">קיבאורד שארטקאטס</span></figcaption>
                 </figure>
+                <figure>
+                    <img src="img/screenshot-7-themes.webp" alt="Color themes" loading="lazy">
+                    <figcaption><span data-l="en">Color themes</span><span data-l="yi">קאליר טעמעס</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="img/screenshot-8-writing.webp" alt="Reading and writing" loading="lazy">
+                    <figcaption><span data-l="en">Reading and writing</span><span data-l="yi">ליינען און שרייבן</span></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="discussion">
+        <div class="wrap">
+            <div class="card">
+                <h3><span data-l="en">Questions or ideas?</span><span data-l="yi">פראגעס אדער אידייען?</span></h3>
+                <p data-l="en" style="margin:0;color:var(--muted)">Ask, report a problem or suggest a feature in the <a href="https://www.ivelt.com/forum/viewtopic.php?p=5758816#p5758816">discussion thread on אייוועלט</a>.</p>
+                <p data-l="yi" style="margin:0;color:var(--muted)">פרעגט, מעלדט א פראבלעם אדער שלאגט פאר א נייע זאך אינעם <a href="https://www.ivelt.com/forum/viewtopic.php?p=5758816#p5758816">אשכול אויף אייוועלט</a>.</p>
             </div>
         </div>
     </section>
@@ -227,6 +273,8 @@
         <span data-l="yi">געמאכט דורך מעמבערס פון אייוועלט.</span>
         <span>
             <a href="privacy.html"><span data-l="en">Privacy policy</span><span data-l="yi">פריוואטקייט פאליסי</span></a>
+            ·
+            <a href="https://www.ivelt.com/forum/viewtopic.php?p=5758816#p5758816"><span data-l="en">Discussion</span><span data-l="yi">אשכול</span></a>
             ·
             <a href="https://github.com/chucem/ivelt-helper">GitHub</a>
         </span>

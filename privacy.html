@@ -67,7 +67,7 @@
 <!-- ============================== English ============================== -->
 <main class="wrap doc" data-l="en">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 13, 2026</p>
+    <p class="updated">Last updated: November 11, 2026</p>
 
     <p>This policy explains what the <strong>iVelt Helper V2</strong> browser extension ("the extension") does with your information. The extension is made by volunteers from the אייוועלט community. It is free, and its source code is public on <a href="https://github.com/chucem/ivelt-helper">GitHub</a>.</p>
 
@@ -76,7 +76,7 @@
             <li>The extension has <strong>no server of its own</strong>. We, the developers, never receive your data.</li>
             <li>There is <strong>no analytics, tracking or advertising</strong>.</li>
             <li>We <strong>do not sell or share</strong> any information.</li>
-            <li>Your settings are stored <strong>only in your browser</strong>.</li>
+            <li>Your settings are stored <strong>only in your browser</strong> (and, if you turn on sync, in your browser's own sync).</li>
         </ul>
     </div>
 
@@ -85,14 +85,17 @@
     <ul>
         <li>Your settings (which features are turned on, the Google Drive folder name, and similar options).</li>
         <li>A cached list of which forum topics have a linked comments topic.</li>
+        <li>What you type in a reply, until you send it (drafts), so a crash or a closed tab doesn't lose it.</li>
+        <li>If you turn on more than one account: for each account you save, its forum login cookies, its name and its profile picture, so you can switch between accounts. They are kept in the extension's own database, which the forum's pages can't read, and are never synced. Turning the setting off deletes them.</li>
         <li>If you use the Google Drive feature: the name, email address and profile picture of the Google account you connected, so the extension can show you which account files will go to, and the ID of the folder it uploads to.</li>
         <li>If you use the Dropbox feature: the name, email address and profile picture of the Dropbox account you connected, and the sign-in token Dropbox gives the extension (see section 4).</li>
         <li>Diagnostic logs, only if you turn on debug mode. They leave your computer only if you copy them yourself.</li>
     </ul>
-    <p>This information never leaves your device. Uninstalling the extension deletes it.</p>
+    <p>Except for settings sync (below), this information never leaves your device. Uninstalling the extension deletes it.</p>
+    <p>If you turn on settings sync, your settings and colors (not the other information above) go through your browser's own sync, like your bookmarks, to your other computers.</p>
 
     <h2>2. The אייוועלט website</h2>
-    <p>To show notifications, new-reply alerts, quotes and print views, the extension loads pages from ivelt.com (and its mirror domains) in your browser, using the login you already have there. The extension reads the ivelt.com login cookie only to check whether you are signed in, and to provide the quick sign-in and emergency sign-out buttons. This is the same traffic your browser sends when you visit the forum yourself. Nothing is sent anywhere else.</p>
+    <p>To show notifications, new-reply alerts, quotes and print views, the extension loads pages from ivelt.com in your browser, using the login you already have there. The extension reads the ivelt.com login cookie to check whether you are signed in, and to provide the quick sign-in and emergency sign-out buttons. If you turn on more than one account, it also saves the login cookies of the accounts you add (see section 1) and puts them back when you switch accounts. These cookies are only ever sent to ivelt.com, as your browser does anyway. This is the same traffic your browser sends when you visit the forum yourself. Nothing is sent anywhere else.</p>
 
     <h2>3. Google Drive upload (optional)</h2>
     <p>This feature is used only when you click the <strong>Google Drive</strong> button while writing a post.</p>
@@ -125,6 +128,7 @@
         <li><strong>Google Sheets:</strong> The extension downloads a public, read-only list of comment topics from a published Google Sheet. No information about you is included in that request.</li>
         <li><strong>Google Search:</strong> When you use the built-in topic or site search, your search words are sent to Google Search, just as if you had searched there yourself.</li>
         <li><strong>Browser notifications:</strong> If you turn them on, they are created by your browser on your device.</li>
+        <li><strong>GitHub:</strong> For a copy installed from GitHub, the settings page asks GitHub's public API for the newest version number, to tell you when an update is out. No information about you is included in that request.</li>
     </ul>
     <p>Your use of Google services is also covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
@@ -141,7 +145,7 @@
 <!-- ============================== Yiddish ============================== -->
 <main class="wrap doc" data-l="yi" dir="rtl">
     <h1>פריוואטקייט פאליסי</h1>
-    <p class="updated">לעצטנס אפדעיטעד: 13טן אקטאבער 2026</p>
+    <p class="updated">לעצטנס אפדעיטעד: 11טן נאוועמבער 2026</p>
 
     <p>די פאליסי ערקלערט וואס די <strong>iVelt Helper V2</strong> בראוזער עקסטענשען ("די עקסטענשען") טוט מיט אייער אינפארמאציע. די עקסטענשען ווערט געמאכט דורך פרייוויליגע פון די אייוועלט קהילה. זי איז אומזיסט, און דער קאוד איז עפנטלעך אויף <a href="https://github.com/chucem/ivelt-helper">GitHub</a>.</p>
 
@@ -152,7 +156,7 @@
             <li>די עקסטענשען האט <strong>נישט קיין אייגענעם סערווער</strong>. מיר, די מאכער, באקומען קיינמאל נישט אייער אינפארמאציע.</li>
             <li>עס איז <strong>נישטא קיין אנאליטיקס, נאכפאלגן אדער רעקלאמעס</strong>.</li>
             <li>מיר <strong>פארקויפן נישט און טיילן נישט</strong> קיין שום אינפארמאציע.</li>
-            <li>אייערע אנשטעלונגען ווערן געהאלטן <strong>נאר אין אייער בראוזער</strong>.</li>
+            <li>אייערע אנשטעלונגען ווערן געהאלטן <strong>נאר אין אייער בראוזער</strong> (און אויב איר צינדט אן סינק, אין דעם בראוזער'ס אייגענעם סינק).</li>
         </ul>
     </div>
 
@@ -161,14 +165,17 @@
     <ul>
         <li>אייערע אנשטעלונגען (וועלכע זאכן זענען אנגעצונדן, דער נאמען פונעם Google Drive פאלדער, א.א.וו.).</li>
         <li>א ליסטע פון וועלכע אשכולות האבן א קאמענטארן אשכול.</li>
+        <li>וואס איר שרייבט אין א תגובה, ביז איר שיקט עס (דראפטס), אז א קראך אדער א פארמאכטער טעב זאל עס נישט פארלירן.</li>
+        <li>אויב איר צינדט אן מערערע אקאונטס: פאר יעדן אקאונט וואס איר געדענקט, זיינע פארום לאגין קוקיס, זיין נאמען און זיין בילד, כדי צו קענען טוישן צווישן די אקאונטס. זיי ווערן געהאלטן אין דער עקסטענשען'ס אייגענער דאטאבעיס, וואס די בלעטער פונעם פארום קענען נישט ליינען, און ווערן קיינמאל נישט געסינקט. אויסלעשן די אפציע מעקט זיי אויס.</li>
         <li>אויב מען נוצט Google Drive: דער נאמען, אימעיל און בילד פונעם Google אקאונט וואס איר האט פארבינדן, כדי צו ווייזן אויף וועלכן אקאונט די פיילס גייען, און דער ID פונעם פאלדער.</li>
         <li>אויב מען נוצט Dropbox: דער נאמען, אימעיל און בילד פונעם Dropbox אקאונט וואס איר האט פארבינדן, און דער אריינלאג טאקען וואס Dropbox גיט דער עקסטענשען (זעט טייל 4).</li>
         <li>לאגס, נאר אויב מען צינדט אן "דיבאג מאוד". זיי גייען נישט ארויס פון אייער קאמפיוטער סיידן איר קאפירט זיי אליין.</li>
     </ul>
-    <p>די אינפארמאציע גייט נישט ארויס פון אייער מכשיר. אז מען נעמט אראפ די עקסטענשען ווערט עס אויסגעמעקט.</p>
+    <p>חוץ פון סינק (אונטן), גייט די אינפארמאציע נישט ארויס פון אייער מכשיר. אז מען נעמט אראפ די עקסטענשען ווערט עס אויסגעמעקט.</p>
+    <p>אויב איר צינדט אן סינק, גייען אייערע אנשטעלונגען און קאלירן (נישט די אנדערע אינפארמאציע אויבן) דורך דעם בראוזער'ס אייגענעם סינק, ווי אייערע בוקמארקס, צו אייערע אנדערע קאמפיוטערס.</p>
 
     <h2>2. די אייוועלט וועבזייטל</h2>
-    <p>כדי צו ווייזן נאטיפיקאציעס, מעלדונגען פון נייע תגובות, ציטאטן און פרינטן, לאדנט די עקסטענשען בלעטער פון ivelt.com אין אייער בראוזער, מיט דעם לאגין וואס איר האט שוין דארט. די עקסטענשען ליינט דעם ivelt.com לאגין קוקי נאר צו וויסן צי איר זענט אריינגעלאגט, און פאר די "אריינלאגן" און "עמערזשענסי ארויסלאגן" קנעפלעך. דאס איז די זעלבע זאך וואס אייער בראוזער שיקט ווען איר גייט אליין אויפן פארום. גארנישט ווערט נישט געשיקט ערגעץ אנדערש.</p>
+    <p>כדי צו ווייזן נאטיפיקאציעס, מעלדונגען פון נייע תגובות, ציטאטן און פרינטן, לאדנט די עקסטענשען בלעטער פון ivelt.com אין אייער בראוזער, מיט דעם לאגין וואס איר האט שוין דארט. די עקסטענשען ליינט דעם ivelt.com לאגין קוקי צו וויסן צי איר זענט אריינגעלאגט, און פאר די "אריינלאגן" און "עמערזשענסי ארויסלאגן" קנעפלעך. אויב איר צינדט אן מערערע אקאונטס, האלט זי אויך אן די לאגין קוקיס פון די אקאונטס וואס איר לייגט צו (זעט טייל 1), און שטעלט זיי צוריק ווען איר טוישט אקאונט. די קוקיס ווערן נאר געשיקט צו ivelt.com, ווי אייער בראוזער טוט סיי ווי. דאס איז די זעלבע זאך וואס אייער בראוזער שיקט ווען איר גייט אליין אויפן פארום. גארנישט ווערט נישט געשיקט ערגעץ אנדערש.</p>
 
     <h2>3. ארויפלייגן אויף Google Drive (אויב מען וויל)</h2>
     <p>די אפציע ווערט גענוצט נאר ווען איר דרוקט אויפן <strong>Google Drive</strong> קנעפל ביים שרייבן א תגובה.</p>
@@ -201,6 +208,7 @@
         <li><strong>Google Sheets:</strong> די עקסטענשען לאדנט אראפ א עפנטלעכע ליסטע פון קאמענטארן אשכולות פון א Google Sheet. קיין אינפארמאציע וועגן אייך ווערט נישט געשיקט דערמיט.</li>
         <li><strong>Google זוך:</strong> ווען איר נוצט די זוך אינעם אשכול אדער אויפן זייטל, גייען אייערע ווערטער צו Google, פונקט ווי איר וואלט אליין געזוכט דארט.</li>
         <li><strong>בראוזער נאטיפיקאציעס:</strong> אויב איר צינדט זיי אן, ווערן זיי געמאכט דורך אייער בראוזער אויף אייער מכשיר.</li>
+        <li><strong>GitHub:</strong> ביי א קאפיע אינסטאלירט פון GitHub, פרעגט דער אנשטעלונגען בלאט GitHub'ס עפנטלעכע API וואס איז די נייסטע ווערסיע, כדי צו זאגן ווען עס איז דא אן אפדעיט. קיין אינפארמאציע וועגן אייך ווערט נישט געשיקט דערמיט.</li>
     </ul>
     <p>אייער נוצונג פון Google סערוויסעס איז אויך אונטער <a href="https://policies.google.com/privacy">Google'ס פריוואטקייט פאליסי</a>.</p>
 
